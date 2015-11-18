@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{511A7A49-FB9B-4D77-BF06-7B9F637F8FC1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntuiLab.Leap</RootNamespace>
+    <AssemblyName>IntuiLab.Leap</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LeapCSharp.NET4.0">
+      <HintPath>packages\LeapCSharp.NET4.0.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataStructures\FingerData.cs" />
+    <Compile Include="DataStructures\ReplayFrame.cs" />
+    <Compile Include="DataStructures\HandData.cs" />
+    <Compile Include="DataStructures\IFrame.cs" />
+    <Compile Include="DataStructures\LeapFrame.cs" />
+    <Compile Include="Events\TouchEventArgs.cs" />
+    <Compile Include="Exceptions\LeapException.cs" />
+    <Compile Include="Facades\GestureFacade.cs" />
+    <Compile Include="Facades\HandFacade.cs" />
+    <Compile Include="Facades\PostureFingerCountFacade.cs" />
+    <Compile Include="Facades\PostureShifumiFacade.cs" />
+    <Compile Include="LeapListener\LeapListener.cs" />
+    <Compile Include="LeapListener\LeapListenerGestureAndPostureRecognition.cs" />
+    <Compile Include="LeapListener\LeapListenerHandDetection.cs" />
+    <Compile Include="LeapListener\LeapListenerPointing.cs" />
+    <Compile Include="LeapListener\LeapListenerRecording.cs" />
+    <Compile Include="LeapListener\LeapListenerReplay.cs" />
+    <Compile Include="LeapPlugin.cs" />
+    <Compile Include="Parameters\ParametersGesture.cs" />
+    <Compile Include="Parameters\ParametersPointing.cs" />
+    <Compile Include="Parameters\ParametersPosture.cs" />
+    <Compile Include="Parameters\ParametersScheduler.cs" />
+    <Compile Include="Pointing\LeapAllFingersPointing.cs" />
+    <Compile Include="Pointing\FingerPointing.cs" />
+    <Compile Include="Pointing\IntuiLabPriorityFingerPointing.cs" />
+    <Compile Include="Pointing\LeapPriorityFingerPointing.cs" />
+    <Compile Include="Recognition\GestureAPI.cs" />
+    <Compile Include="Recognition\IntuiLabGestureAPI.cs" />
+    <Compile Include="Recognition\LeapGestureAPI.cs" />
+    <Compile Include="Recognition\Scheduler.cs" />
+    <Compile Include="Events\PostureEventArgs.cs" />
+    <Compile Include="Recognition\Gestures\GestureDetectedEventArgs.cs" />
+    <Compile Include="Recognition\Gestures\GestureRecognizer.cs" />
+    <Compile Include="Recognition\Gestures\GestureType.cs" />
+    <Compile Include="Events\CircleGestureEventArgs.cs" />
+    <Compile Include="Events\FingerPresentEventArgs.cs" />
+    <Compile Include="Events\FingerRemovedEventArgs.cs" />
+    <Compile Include="Events\HandEventArgs.cs" />
+    <Compile Include="Events\LinearGestureEventArgs.cs" />
+    <Compile Include="Recognition\Postures\PostureDetectedEventArgs.cs" />
+    <Compile Include="Recognition\Postures\PostureRecognizer.cs" />
+    <Compile Include="Recognition\Postures\PostureType.cs" />
+    <Compile Include="Parameters\ParametersOther.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataRecording\CSVWriter.cs" />
+    <Compile Include="Utils\LeapMath.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="IntuiLab.Leap.CountFinger.dax" />
+    <None Include="IntuiLab.Leap.General.dax" />
+    <None Include="IntuiLab.Leap.Gestures.dax" />
+    <None Include="IntuiLab.Leap.ifd" />
+    <None Include="IntuiLab.Leap.Shifumi.dax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\DefaultAssets\DefaultMinimized.png" />
+    <Content Include="Data\Images\00_detected.png" />
+    <Content Include="Data\Images\00_idle.png" />
+    <Content Include="Data\Images\00_progress.png" />
+    <Content Include="Data\Images\01_detected.png" />
+    <Content Include="Data\Images\01_idle.png" />
+    <Content Include="Data\Images\01_progress.png" />
+    <Content Include="Data\Images\02_detected.png" />
+    <Content Include="Data\Images\02_idle.png" />
+    <Content Include="Data\Images\02_progress.png" />
+    <Content Include="Data\Images\03_detected.png" />
+    <Content Include="Data\Images\03_idle.png" />
+    <Content Include="Data\Images\03_progress.png" />
+    <Content Include="Data\Images\04_detected.png" />
+    <Content Include="Data\Images\04_idle.png" />
+    <Content Include="Data\Images\04_progress.png" />
+    <Content Include="Data\Images\05_detected.png" />
+    <Content Include="Data\Images\05_idle.png" />
+    <Content Include="Data\Images\05_progress.png" />
+    <Content Include="Data\Images\Birds.png" />
+    <Content Include="Data\Images\Butterfly.png" />
+    <Content Include="Data\Images\Dandelion.jpg" />
+    <Content Include="Data\Images\Gates.png" />
+    <Content Include="Data\Images\Island.png" />
+    <Content Include="Data\Images\LeapHandPresent.png" />
+    <Content Include="Data\Images\LeapNoHandPresent.png" />
+    <Content Include="Data\Images\ProgressBar_detected.png" />
+    <Content Include="Data\Images\ProgressBar_none.png" />
+    <Content Include="Data\Images\RockLeap_detected.png" />
+    <Content Include="Data\Images\RockLeap_idle.png" />
+    <Content Include="Data\Images\RockLeap_progress.png" />
+    <Content Include="Data\Images\ScissorsLeap_detected.png" />
+    <Content Include="Data\Images\ScissorsLeap_idle.png" />
+    <Content Include="Data\Images\ScissorsLeap_progress.png" />
+    <Content Include="Data\Images\SwipeLeftLeap-detected.png" />
+    <Content Include="Data\Images\SwipeLeftLeap-idle.png" />
+    <Content Include="Data\Images\SwipeRightLeap-detected.png" />
+    <Content Include="Data\Images\SwipeRightLeap-idle.png" />
+    <Content Include="Data\Images\TapLeap-detected.png" />
+    <Content Include="Data\Images\TapLeap-idle.png" />
+    <Content Include="Data\Images\Wheel.png" />
+    <Content Include="IntuiLab.Leap.CountFinger.png" />
+    <Content Include="IntuiLab.Leap.General.png" />
+    <Content Include="IntuiLab.Leap.Gestures.png" />
+    <Content Include="IntuiLab.Leap.Shifumi.png" />
+    <Content Include="leap_ico_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /S /Y /i "$(ProjectDir)bin\$(ConfigurationName)\$(TargetFileName)" "$(SolutionDir)LeapIA\"
+xcopy /S /Y /i "$(ProjectDir)*.ifd" "$(SolutionDir)LeapIA\"
+xcopy /S /Y /i "$(ProjectDir)*.png" "$(SolutionDir)LeapIA\"
+xcopy /S /Y /i "$(ProjectDir)*.jpg" "$(SolutionDir)LeapIA\"
+xcopy /S /Y /i "$(ProjectDir)*.dax" "$(SolutionDir)LeapIA\"
+xcopy /S /Y /i "$(ProjectDir)packages\*.dll" "$(SolutionDir)LeapIA\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

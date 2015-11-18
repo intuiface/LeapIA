@@ -1,0 +1,405 @@
+{
+    "kind": "discovery#restDescription",
+    "discoveryVersion": "v1",
+    "id": "IntuiLab.Leap",
+    "name": "Leap Motion",
+    "version": "1.3.0",
+    "title": "Leap Motion DLL",
+    "protocol": "dll",
+    "basePath": "IntuiLab.Leap",
+    "dependencies": [
+        "IntuiLab.Leap.dll",
+		"Leap.dll",
+		"LeapCSharp.dll",
+        "LeapCSharp.NET4.0.dll"
+    ],
+	"systemDependencies":
+    [{
+        "path":"C:/Program Files (x86)/Leap Motion/Core Services/LeapSvc.exe",
+        "errorMessage":"Requires installation of [url=http://support.intuilab.com/kb/how-to/use-leap-motion-with-your-experiences]Leap Motion software.[/url]"
+    }],
+	"icons" : {		
+		"x32" : "leap_ico_32.png"
+	},
+    "schemas": {
+		"HandFacade": 
+        {
+			"id": "HandFacade",
+			"type": "object",
+			"title": "Hand presence",
+            "description":"Hand entry and removal.",
+			"properties": {
+			}
+		},
+        "GestureFacade": {
+            "id": "GestureFacade",
+            "type": "object",
+			"title": "Gestures",
+            "properties": {
+                "EnableSwipeLeftGesture": {
+                    "type": "boolean",
+					"title": "Enable Swipe Left Gesture"
+                },
+                "EnableSwipeRightGesture": {
+                    "type": "boolean",
+					"title": "Enable Swipe Right Gesture"
+                },
+                "EnableTapGesture": {
+                    "type": "boolean",
+                    "title": "Enable Tap Gesture"
+                }
+			}
+		},
+		"PostureShifumiFacade": {
+			"id": "PostureShifumiFacade",
+            "type": "object",
+			"title": "Rock-Paper-Scissors Postures",
+            "properties": {
+                "EnableRockPosture": {
+                    "type": "boolean",
+                    "title": "Enable Rock Posture"
+                },
+                "EnableScissorsPosture": {
+                    "type": "boolean",
+                    "title": "Enable Scissors Posture"
+                },
+                "EnablePaperPosture": {
+                    "type": "boolean",
+                    "title": "Enable Paper Posture"
+                },
+				"DetectionTimeForRockInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the Rock posture in milliseconds",
+					"readonly" : true
+				},
+				"DetectionTimeForScissorsInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the Scissors posture in milliseconds",
+					"readonly" : true
+				},
+				"DetectionTimeForPaperInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the Paper posture in milliseconds",
+					"readonly" : true
+				}
+			}
+		},
+		"PostureFingerCountFacade": {
+			"id": "PostureFingerCountFacade",
+            "type": "object",
+			"title": "Fingers Count Postures",
+            "properties": {
+                "EnableZeroPosture": {
+                    "type": "boolean",
+                    "title": "Enable Zero Posture"
+                },
+                "EnableOnePosture": {
+                    "type": "boolean",
+                    "title": "Enable One Posture"
+                },
+                "EnableTwoPosture": {
+                    "type": "boolean",
+                    "title": "Enable Two Posture"
+                },
+                "EnableThreePosture": {
+                    "type": "boolean",
+                    "title": "Enable Three Posture"
+                },
+                "EnableFourPosture": {
+                    "type": "boolean",
+                    "title": "Enable Four Posture"
+                },
+                "EnableFivePosture": {
+                    "type": "boolean",
+                    "title": "Enable Five Posture"
+                },
+				"DetectionTimeForZeroInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the Zero posture in milliseconds",
+					"readonly" : true
+				},
+				"DetectionTimeForOneInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the One posture in milliseconds",
+					"readonly" : true
+				},
+				"DetectionTimeForTwoInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the Two posture in milliseconds",
+					"readonly" : true
+				},
+				"DetectionTimeForThreeInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the Three posture in milliseconds",
+					"readonly" : true
+				},
+				"DetectionTimeForFourInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the Four posture in milliseconds",
+					"readonly" : true
+				},
+				"DetectionTimeForFiveInMilliseconds": {
+					"type": "integer",
+					"title" : "The detection time of the Five posture in milliseconds",
+					"readonly" : true
+				}
+            }
+        }
+    },
+    "resources": {
+		"HandFacade": {
+			"id": "HandFacade",
+            "title": "Hand presence",
+            "description":"Hand entry and removal.",
+            "isExternalAsset": "true",
+			"templateDesignAccelerator" : "IntuiLab.Leap.General.dax",
+            "methods": {},
+            "events": {
+			    "HandPresent": {
+                    "id": "HandPresent",
+					"title": "Hand is detected",
+                    "description": "A hand is detected."
+                },
+                "HandRemoved": {
+                    "id": "HandRemoved",
+					"title": "Hand is lost",
+                    "description": "A hand is lost."
+                }
+			}
+		},
+		"GestureFacade": {
+			"id": "GestureFacade",
+			"title": "Gestures",
+			"description" : "Hand movements for swipe and tap",
+			"isExternalAsset": "true",
+			"templateDesignAccelerator" : "IntuiLab.Leap.Gestures.dax",
+            "methods": {},
+            "events": {
+				"SwipeLeftGestureDetected": {
+                    "id": "SwipeLeftGestureDetected",
+					"title": "Swipe Left is detected",
+                    "description": "Raised when a Swipe Left gesture is detected."
+                },
+                "SwipeRightGestureDetected": {
+                    "id": "SwipeRightGestureDetected",
+					"title": "Swipe Right is detected",
+                    "description": "Raised when a Swipe Right gesture is detected."
+                },
+                "TapGestureDetected": {
+                    "id": "TapGestureDetected",
+					"title": "Tap Down is detected",
+                    "description": "Raised when a Tap Down gesture is detected."
+                }
+			}
+		},
+		"PostureShifumiFacade": {
+			"id": "PostureShifumiFacade",
+			"title": "Rock-Paper-Scissors Postures",
+			"description" : "Classic hand gestures for the rock-paper-scissors game.",
+			"isExternalAsset": "true",
+			"templateDesignAccelerator" : "IntuiLab.Leap.Shifumi.dax",
+            "methods": {},
+            "events": {
+                "RockPostureSucceed": {
+                    "id": "RockPostureSucceed",
+					"title": "Rock Posture is detected",
+                    "description": "Raised when Posture Rock is detected. "
+                },
+                "RockPostureDetectionInProgress": {
+                    "id": "RockPostureDetectionInProgress",
+					"title": "Rock Posture is in progress",
+                    "description": "Raised when Posture Rock detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of Rock posture"
+						}
+					}
+                },
+                "RockPostureDetectionLost": {
+                    "id": "RockPostureDetectionLost",
+					"title": "Rock Posture is lost",
+                    "description": "Raised when Posture Rock is lost."
+                },
+                "ScissorsPostureSucceed": {
+                    "id": "ScissorsPostureSucceed",
+					"title": "Scissors Posture is detected",
+                    "description": "Raised when Posture Scissors is detected. "
+                },
+                "ScissorsPostureDetectionInProgress": {
+                    "id": "ScissorsPostureDetectionInProgress",
+					"title": "Scissors Posture is in progress",
+                    "description": "Raised when Posture Scissors detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of Scissors posture"
+						}
+					}
+                },
+                "ScissorsPostureDetectionLost": {
+                    "id": "ScissorsPostureDetectionLost",
+					"title": "Scissors Posture is lost",
+                    "description": "Raised when Posture Scissors is lost."
+                },
+                "PaperPostureSucceed": {
+                    "id": "PaperPostureSucceed",
+					"title": "Paper Posture is detected",
+                    "description": "Raised when Posture Paper is detected. "
+                },
+                "PaperPostureDetectionInProgress": {
+                    "id": "PaperPostureDetectionInProgress",
+					"title": "Paper Posture is in progress",
+                    "description": "Raised when Posture Paper detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of Paper posture"
+						}
+					}
+                },
+                "PaperPostureDetectionLost": {
+                    "id": "PaperPostureDetectionLost",
+					"title": "Paper Posture is lost",
+                    "description": "Raised when Posture Paper is lost."
+                }
+			}
+		},	
+        "PostureFingerCountFacade": {
+			"id": "PostureFingerCountFacade",
+            "title": "Finger Count Postures",
+			"description" : "Anywhere from zero to five fingers on one hand.",
+			"isExternalAsset": "true",
+			"templateDesignAccelerator" : "IntuiLab.Leap.CountFinger.dax",
+            "methods": {},
+            "events": {
+                "ZeroFingerPostureSucceed": {
+                    "id": "ZeroPostureSucceed",
+					"title": "Zero Posture is detected",
+                    "description": "Raised when Posture Zero is detected. "
+                },
+                "ZeroFingerPostureDetectionInProgress": {
+                    "id": "ZeroPostureDetectionInProgress",
+					"title": "Zero Posture is in progress",
+                    "description": "Raised when Posture Zero detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of Zero posture"
+						}
+					}
+                },
+                "ZeroFingerPostureDetectionLost": {
+                    "id": "ZeroPostureDetectionLost",
+					"title": "Zero Posture is lost",
+                    "description": "Raised when Posture Zero is lost."
+                },
+                "OneFingerPostureSucceed": {
+                    "id": "OnePostureSucceed",
+					"title": "One Posture is detected",
+                    "description": "Raised when Posture One is detected. "
+                },
+                "OneFingerPostureDetectionInProgress": {
+                    "id": "OnePostureDetectionInProgress",
+					"title": "One Posture is in progress",
+                    "description": "Raised when Posture One detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of One posture"
+						}
+					}
+                },
+                "OneFingerPostureDetectionLost": {
+                    "id": "OnePostureDetectionLost",
+					"title": "One Posture is lost",
+                    "description": "Raised when Posture One is lost."
+                },
+                "TwoFingersPostureSucceed": {
+                    "id": "TwoPostureSucceed",
+					"title": "Two Posture is detected",
+                    "description": "Raised when Posture Two is detected. "
+                },
+                "TwoFingersPostureDetectionInProgress": {
+                    "id": "TwoPostureDetectionInProgress",
+					"title": "Two Posture is in progress",
+                    "description": "Raised when Posture Two detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of Two posture"
+						}
+					}
+                },
+                "TwoFingersPostureDetectionLost": {
+                    "id": "TwoPostureDetectionLost",
+					"title": "Two Posture is lost",
+                    "description": "Raised when Posture Two is lost."
+                },
+                "ThreeFingersPostureSucceed": {
+                    "id": "ThreePostureSucceed",
+					"title": "Three Posture is detected",
+                    "description": "Raised when Posture Three is detected. "
+                },
+                "ThreeFingersPostureDetectionInProgress": {
+                    "id": "ThreePostureDetectionInProgress",
+					"title": "Three Posture is in progress",
+                    "description": "Raised when Posture Three detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of Three posture"
+						}
+					}
+                },
+                "ThreeFingersPostureDetectionLost": {
+                    "id": "ThreePostureDetectionLost",
+					"title": "Three Posture is lost",
+                    "description": "Raised when Posture Three is lost."
+                },
+                "FourFingersPostureSucceed": {
+                    "id": "FourPostureSucceed",
+					"title": "Four Posture is detected",
+                    "description": "Raised when Posture Four is detected. "
+                },
+                "FourFingersPostureDetectionInProgress": {
+                    "id": "FourPostureDetectionInProgress",
+					"title": "Four Posture is in progress",
+                    "description": "Raised when Posture Four detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of Four posture"
+						}
+					}
+                },
+                "FourFingersPostureDetectionLost": {
+                    "id": "FourPostureDetectionLost",
+					"title": "Four Posture is lost",
+                    "description": "Raised when Posture Four is lost."
+                },
+                "FiveFingersPostureSucceed": {
+                    "id": "FivePostureSucceed",
+					"title": "Five Posture is detected",
+                    "description": "Raised when Posture Five is detected. "
+                },
+                "FiveFingersPostureDetectionInProgress": {
+                    "id": "FivePostureDetectionInProgress",
+					"title": "Five Posture is in progress",
+                    "description": "Raised when Posture Five detection is in progress.",
+					"properties" : {
+						"Percentage" : {
+							"type" : "integer",
+							"title" : "Detection percentage of Five posture"
+						}
+					}
+                },
+                "FiveFingersPostureDetectionLost": {
+                    "id": "FivePostureDetectionLost",
+					"title": "Five Posture is lost",
+                    "description": "Raised when Posture Five is lost."
+                }
+            }
+        }
+    }
+}

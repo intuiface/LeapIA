@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="12" Name="IntuiLab.Leap.Shifumi" Description="" Category="Leap Motion" Author="IntuiLab" AuthorId="IntuiLab" Icon="IntuiLab.Leap.Shifumi.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="9292">
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/Project 342/Space">
+    <Space Name="Space" AutoReset="false" BackgroundColor="#FF000000" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/Project 342/Space/Middle/Default_template_for_Rock_Paper_Scissors_Postures" CreateAsCollectionSibling="true">
+    <Collection Name="Default_template_for_Rock_Paper_Scissors_Postures" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:932]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:503]]></Property>
+        <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:726]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:726]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:706]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:706.3567216894]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF000000]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:716]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:554]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:363]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:370]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Header_background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:726]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:91]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:363]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:47]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Footer_background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:91]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:726]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:363]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:663]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Title" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+        <Properties>
+          <Property Type="Container" Name="Height"><![CDATA[value:39]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:285]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:47]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:523]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:34]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+          <Property Type="Domain" Name="Text"><![CDATA[value:Leap Motion Rock/Paper/Scissors]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group_general" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:521]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:524.697001670116]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:716]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:716.245154705326]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:363]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:355]]></Property>
+        </Properties>
+        <Collection Name="Group_for_Paper" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="X"><![CDATA[value:121]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Collection Name="Group_for_Paper_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_Paper_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a45e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Paper_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a46e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:111.956359521764]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:111.956359521764]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Paper_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Group_for_Paper_images/Image_for_Paper_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Group_for_Paper_images/Image_for_Paper_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Gauge_for_Paper/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a47e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:111.956359521764]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_Paper" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Paper]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_Paper" Visual="Linear Gauge" Style="" Container="No resize" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Container" Name="Y"><![CDATA[value:109]]></Property>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:43]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Group_for_Rock" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="X"><![CDATA[value:358]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+          </Properties>
+          <Collection Name="Group_for_Rock_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_Rock_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a48e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Rock_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a49e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Rock_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Group_for_Rock_images/Image_for_Rock_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Group_for_Rock_images/Image_for_Rock_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Gauge_for_Rock/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a50e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:111.956359521764]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_Rock" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Rock]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_Rock" Visual="Linear Gauge" Style="" Container="Default" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:43]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:109]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Group_for_Scissors" Visual="Group" Style="" Container="Default" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="X"><![CDATA[value:595]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+          </Properties>
+          <Collection Name="Group_for_Scissors_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_Scissors_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a51e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Scissors_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a52e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:111.956359521764]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Scissors_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Group_for_Scissors_images/Image_for_Scissors_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Group_for_Scissors_images/Image_for_Scissors_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Gauge_for_Scissors/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a53e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:111.956359521764]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:111.956359521764]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_Scissors" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Scissors]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_Scissors" Visual="Linear Gauge" Style="" Container="Default" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:43]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:109]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Group_for_game" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:475]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:228]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:478.215482594719]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:229.517193715553]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:358]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:414]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          </Properties>
+          <Collection Name="Group_for_computer_images" Visual="Group" Style="" Container="Default" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="X"><![CDATA[value:98]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:118]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:160]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:160]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:200]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+            <Asset Name="Image_for_computer_Scissors" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a51e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_computer_Paper" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a45e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_computer_Rock" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a48e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Text_for_computer" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+              <Properties>
+                <Property Type="Visual" Name="Font"><![CDATA[value:Segoe UI]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Domain" Name="Text"><![CDATA[value:Computer]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:180]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Collection Name="Group_for_user_images" Visual="Group" Style="" Container="Default" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="X"><![CDATA[value:379.597058403529]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:117.129960390454]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:160]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:160]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:200]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+            <Asset Name="Image_for_user_Scissors" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a51e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_user_Paper" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a45e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_user_Rock" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a48e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Text_for_user" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+              <Properties>
+                <Property Type="Visual" Name="Font"><![CDATA[value:Segoe UI]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+                <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+                <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:80]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:180]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+                <Property Type="Domain" Name="Text"><![CDATA[value:You]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_game_result" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Attachments>
+              <TimerTrigger Interval="value:3" NumberOfTicks="1">
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Image_for_computer_Scissors/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Image_for_computer_Paper/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Image_for_computer_Rock/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Image_for_user_Scissors/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Image_for_user_Paper/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Image_for_user_Rock/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Text_for_game_result/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Text_for_computer/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+                <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Text_for_user/" Type="Container" Name="Hide" Delay="value:0.0">
+                  <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:True" />
+                </InvokeService>
+              </TimerTrigger>
+            </Attachments>
+            <Properties>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Segoe UI]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:238.893082088621]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:100.974103784874]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:You Win]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:100]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+      </Collection>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Rock-Paper-Scissors Postures" DescriptorPath="player://data/InterfaceAssets/Leap%20Motion/IntuiLab.Leap.ifd" ExternalAssetName="PostureShifumiFacade">
+      <Attachments>
+        <EventTrigger EventType="Domain" EventName="PaperPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Group_for_Paper_images/Image_for_Paper_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Group_for_Paper_images/Image_for_Paper_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Image_for_computer_Rock/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Text_for_game_result/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Image_for_user_Paper/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Text_for_computer/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Text_for_user/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="PaperPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Gauge_for_Paper/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Group_for_Paper_images/Image_for_Paper_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Group_for_Paper_images/Image_for_Paper_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="PaperPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Gauge_for_Paper/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Group_for_Paper_images/Image_for_Paper_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Paper/Group_for_Paper_images/Image_for_Paper_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="RockPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Group_for_Rock_images/Image_for_Rock_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Group_for_Rock_images/Image_for_Rock_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Image_for_computer_Scissors/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Text_for_game_result/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Image_for_user_Rock/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Text_for_computer/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Text_for_user/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="RockPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Gauge_for_Rock/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Group_for_Rock_images/Image_for_Rock_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Group_for_Rock_images/Image_for_Rock_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="RockPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Gauge_for_Rock/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Group_for_Rock_images/Image_for_Rock_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Rock/Group_for_Rock_images/Image_for_Rock_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="ScissorsPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Group_for_Scissors_images/Image_for_Scissors_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Group_for_Scissors_images/Image_for_Scissors_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Image_for_computer_Paper/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Text_for_game_result/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Image_for_user_Scissors/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_computer_images/Text_for_computer/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_game/Group_for_user_images/Text_for_user/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:True" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="ScissorsPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Gauge_for_Scissors/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Group_for_Scissors_images/Image_for_Scissors_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Group_for_Scissors_images/Image_for_Scissors_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="ScissorsPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Gauge_for_Scissors/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Group_for_Scissors_images/Image_for_Scissors_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Rock_Paper_Scissors_Postures/Group_general/Group_for_Scissors/Group_for_Scissors_images/Image_for_Scissors_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+      </Attachments>
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.ifd" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.dll" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Leap.dll" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/LeapCSharp.dll" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/LeapCSharp.NET4.0.dll" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/leap_ico_32.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.CountFinger.ifa" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.General.ifa" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.Gestures.ifa" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.Shifumi.ifa" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Birds.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Butterfly.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Dandelion.jpg" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Gates.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Island.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/LeapHandPresent.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/LeapNoHandPresent.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ProgressBar_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ProgressBar_none.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_progress.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeLeftLeap-detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeLeftLeap-idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeRightLeap-detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeRightLeap-idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/TapLeap-detected.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/TapLeap-idle.png" Length="-1" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Wheel.png" Length="-1" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="b7a7a45e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="13861" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/05_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a46e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="13688" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/05_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a47e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="14505" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/05_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a54e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="1076" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/ProgressBar_none.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a55e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="1083" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/ProgressBar_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a48e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="7618" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/RockLeap_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a49e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="7684" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/RockLeap_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a50e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="7830" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/RockLeap_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a51e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="9692" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/ScissorsLeap_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a52e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="10190" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/ScissorsLeap_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a53e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="9952" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/ScissorsLeap_detected.png" />
+  </MashupResource>
+</Mashup>

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="12" Name="IntuiLab.Leap.General" Description="" Category="Leap Motion" Author="IntuiLab" AuthorId="IntuiLab" Icon="IntuiLab.Leap.General.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="9292">
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/Project 342/Space">
+    <Space Name="Space" AutoReset="false" BackgroundColor="#FF000000" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/Project 342/Space/Middle/Default_template_for_Hand_presence" CreateAsCollectionSibling="true">
+    <Collection Name="Default_template_for_Hand_presence" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:1743]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:177]]></Property>
+        <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:340]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:340]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:337]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:337.426350725927]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF000000]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:330]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:231]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:170]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:173]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Header_background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:339.417954750865]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:65.0692462752198]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:169.208360922998]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:33.0351558012654]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Footer_background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:340]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:169]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:305]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:65]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Title" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+        <Properties>
+          <Property Type="Container" Name="Height"><![CDATA[value:39]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:276]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:36]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:523]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+          <Property Type="Domain" Name="Text"><![CDATA[value:Leap Motion Hand Presence]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:24]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="X"><![CDATA[value:169]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:174]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:200]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+        <Asset Name="Text_for_Hand_presence" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Container" Name="Width"><![CDATA[value:252]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:53]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:118]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:188]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:No Hand Present]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:23]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Image_for_no_hand_present" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+          <Properties>
+            <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a43e-7d56-2456-pd85-076f4feafx88]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Image_for_hand_present" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+          <Properties>
+            <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a44e-7d56-2456-pd85-076f4feaft45]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Hand presence" DescriptorPath="player://data/InterfaceAssets/Leap%20Motion/IntuiLab.Leap.ifd" ExternalAssetName="HandFacade">
+      <Attachments>
+        <EventTrigger EventType="Domain" EventName="HandPresent">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Hand_presence/Group/Text_for_Hand_presence/" Type="Domain" Name="SetText" Delay="value:0.0">
+            <ServiceValueParameter ParamName="value" Value="value:Hand Present" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Hand_presence/Group/Image_for_no_hand_present/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:false" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Hand_presence/Group/Image_for_hand_present/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:false" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="HandRemoved">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Hand_presence/Group/Text_for_Hand_presence/" Type="Domain" Name="SetText" Delay="value:0.0">
+            <ServiceValueParameter ParamName="value" Value="value:No Hand Present" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Hand_presence/Group/Image_for_hand_present/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:false" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Hand_presence/Group/Image_for_no_hand_present/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:false" />
+          </InvokeService>
+        </EventTrigger>
+      </Attachments>
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.ifd" Length="16965" LastModificationDate="2015-06-11T08:37:28Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.dll" Length="109568" LastModificationDate="2015-06-11T08:37:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Leap.dll" Length="1226424" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/LeapCSharp.dll" Length="89272" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/LeapCSharp.NET4.0.dll" Length="77312" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/leap_ico_32.png" Length="487" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.CountFinger.ifa" Length="99228" LastModificationDate="2015-06-11T08:37:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.General.ifa" Length="17797" LastModificationDate="2015-06-11T08:37:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.Gestures.ifa" Length="44338" LastModificationDate="2015-06-11T08:37:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.Shifumi.ifa" Length="71009" LastModificationDate="2015-06-11T08:37:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_detected.png" Length="7807" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_idle.png" Length="7636" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_progress.png" Length="7585" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_detected.png" Length="8445" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_idle.png" Length="8233" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_progress.png" Length="8543" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_detected.png" Length="9956" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_idle.png" Length="9684" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_progress.png" Length="10187" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_detected.png" Length="11353" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_idle.png" Length="11027" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_progress.png" Length="11613" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_detected.png" Length="12148" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_idle.png" Length="11734" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_progress.png" Length="12336" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_detected.png" Length="14505" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_idle.png" Length="13861" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_progress.png" Length="13688" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Birds.png" Length="813034" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Butterfly.png" Length="514702" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Dandelion.jpg" Length="109092" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Gates.png" Length="566428" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Island.png" Length="582148" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/LeapHandPresent.png" Length="14890" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/LeapNoHandPresent.png" Length="12977" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_detected.png" Length="11315" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_idle.png" Length="11139" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_progress.png" Length="12330" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ProgressBar_detected.png" Length="1083" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ProgressBar_none.png" Length="1076" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_detected.png" Length="7830" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_idle.png" Length="7618" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_progress.png" Length="7684" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_detected.png" Length="9952" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_idle.png" Length="9692" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_progress.png" Length="10190" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeLeftLeap-detected.png" Length="12313" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeLeftLeap-idle.png" Length="12106" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeRightLeap-detected.png" Length="12414" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeRightLeap-idle.png" Length="12006" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/TapLeap-detected.png" Length="11684" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/TapLeap-idle.png" Length="10739" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Wheel.png" Length="702802" LastModificationDate="2015-03-16T10:46:04Z" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="b7a7a43e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="12977" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/LeapNoHandPresent.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a44e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="14890" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/LeapHandPresent.png" />
+  </MashupResource>
+</Mashup>

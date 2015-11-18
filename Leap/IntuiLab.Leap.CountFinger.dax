@@ -1,0 +1,1163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="12" Name="IntuiLab.Leap.CountFinger" Description="" Category="Leap Motion" Author="IntuiLab" AuthorId="IntuiLab" Icon="IntuiLab.Leap.CountFinger.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="9292">
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/Project 342/Space">
+    <Space Name="Space" AutoReset="false" BackgroundColor="#FF000000" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/Project 342/Space/Middle/Default_template_for_Finger_Count_Postures" CreateAsCollectionSibling="true">
+    <Collection Name="Default_template_for_Finger_Count_Postures" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:1100]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:539]]></Property>
+        <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:1578]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:1578]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:797]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:797.903267660209]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF000000]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:1567]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:640.381473528441]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:789]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:412.245573583934]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Header_background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:47]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:91]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:789]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:1578]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Footer_background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:1]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF3B3A3A]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:752]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:1578]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:91]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:789]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Title" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+        <Properties>
+          <Property Type="Container" Name="Height"><![CDATA[value:38.0430667140376]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:306]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:46.0521333906771]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:565]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:34]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+          <Property Type="Domain" Name="Text"><![CDATA[value:Leap Motion Finger Count Postures]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group_general" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:608]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:611.605768159983]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:1568]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:1571.4386185506]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:789]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:400]]></Property>
+        </Properties>
+        <Collection Name="Group_for_Zero" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="X"><![CDATA[value:121]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+          <Collection Name="Group_for_Zero_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_Zero_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a62e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Zero_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a63e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Zero_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Group_for_Zero_images/Image_for_Zero_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Group_for_Zero_images/Image_for_Zero_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Gauge_for_Zero/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a64e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_Zero" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Zero]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_Zero" Visual="Linear Gauge" Style="" Container="No resize" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:44]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text_for_Zero_action" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:282]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Birds]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Group_for_One" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="X"><![CDATA[value:356]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+          </Properties>
+          <Collection Name="Group_for_One_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_One_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a65e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_One_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a66e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_One_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Group_for_One_images/Image_for_One_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Group_for_One_images/Image_for_One_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Gauge_for_One/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a67e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_One" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:One]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_One" Visual="Linear Gauge" Style="" Container="Default" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:44]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text_for_One_action" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:282]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Butterfly]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Group_for_Two" Visual="Group" Style="" Container="Default" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="X"><![CDATA[value:592]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:150]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+          </Properties>
+          <Collection Name="Group_for_Two_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_Two_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a68e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Two_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a69e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Two_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Group_for_Two_images/Image_for_Two_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Group_for_Two_images/Image_for_Two_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Gauge_for_Two/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a70e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_Two" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Two]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_Two" Visual="Linear Gauge" Style="" Container="Default" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:44]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text_for_Two_action" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:282]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Dandelion]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Group_for_Three" Visual="Group" Style="" Container="Default" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:121]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:452]]></Property>
+          </Properties>
+          <Collection Name="Group_for_Three_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_Three_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a71e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Three_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a72e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:111.941279941939]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Three_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Group_for_Three_images/Image_for_Three_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Group_for_Three_images/Image_for_Three_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Gauge_for_Three/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a73e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:111.941279941939]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_Three" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Three]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_Three" Visual="Linear Gauge" Style="" Container="Default" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:44]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text_for_Three_action" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:282]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Gates]]></Property>
+              <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Group_for_Four" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:356]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:452]]></Property>
+          </Properties>
+          <Collection Name="Group_for_Four_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_Four_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a74e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Four_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a75e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Four_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Group_for_Four_images/Image_for_Four_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Group_for_Four_images/Image_for_Four_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Gauge_for_Four/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a76e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_Four" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Four]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_Four" Visual="Linear Gauge" Style="" Container="Default" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:28]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:44]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text_for_Four_action" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:282]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Island]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Group_for_Five" Visual="Group" Style="" Container="Default" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:235]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:235]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:295]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:295]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:592]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:452]]></Property>
+          </Properties>
+          <Collection Name="Group_for_Five_images" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+            <Properties>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialHeight"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:157]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="InitialWidth"><![CDATA[value:225]]></Property>
+            </Properties>
+            <Asset Name="Image_for_Five_idle" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a45e-7d56-2456-pd85-076f4feafx88]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Five_in_progress" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a46e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:111.941279941939]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:112]]></Property>
+              </Properties>
+            </Asset>
+            <Asset Name="Image_for_Five_detected" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="" Domain="value:Image">
+              <Attachments>
+                <TimerTrigger Interval="value:1" NumberOfTicks="1">
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Group_for_Five_images/Image_for_Five_detected/" Type="Container" Name="Hide" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Group_for_Five_images/Image_for_Five_idle/" Type="Container" Name="Show" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+                  </InvokeService>
+                  <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Gauge_for_Five/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+                    <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+                    <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+                  </InvokeService>
+                </TimerTrigger>
+              </Attachments>
+              <Properties>
+                <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a47e-7d56-2456-pd85-076f4feaft45]]></Property>
+                <Property Type="Container" Name="X"><![CDATA[value:111.941279941939]]></Property>
+                <Property Type="Container" Name="Y"><![CDATA[value:111.941279941939]]></Property>
+                <Property Type="Container" Name="Width"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="Height"><![CDATA[value:200]]></Property>
+                <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+              </Properties>
+            </Asset>
+          </Collection>
+          <Asset Name="Text_for_Five" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:28]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Five]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF83D3F6]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gauge_for_Five" Visual="Linear Gauge" Style="" Container="Default" ContainerStyle="" Domain="value:DefaultGauge">
+            <Properties>
+              <Property Type="Domain" Name="RatioValue"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:26]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:-90]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:44.2196123053751]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:109.544039574679]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:81]]></Property>
+              <Property Type="Domain" Name="SourceEmptyGauge"><![CDATA[player://resources/b7a7a54e-7d56-2456-pd85-076f4feaft45]]></Property>
+              <Property Type="Domain" Name="SourceFullGauge"><![CDATA[player://resources/b7a7a55e-7d56-2456-pd85-076f4feaft45]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Text_for_Five_action" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Container" Name="Width"><![CDATA[value:225]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:45]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:282]]></Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+              <Property Type="Visual" Name="Italic"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Domain" Name="Text"><![CDATA[value:Wheel]]></Property>
+              <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Asset_Flow" Visual="AssetFlow" Style="" Container="No resize" ContainerStyle="">
+          <Properties>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:827.398205492081]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:367.82677508562]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:1138]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:297]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="SelectedIndex"><![CDATA[value:3]]></Property>
+            <Property Type="Visual" Name="ResizeRatioForOpenedItem"><![CDATA[value:2]]></Property>
+            <Property Type="Visual" Name="InitialRecenterTime"><![CDATA[value:1.7999999999999998]]></Property>
+            <Property Type="Visual" Name="MaxVisibleItems"><![CDATA[value:11]]></Property>
+            <Property Type="Visual" Name="ShowIcons"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="BackgroundRadius"><![CDATA[value:27]]></Property>
+            <Property Type="Visual" Name="ShowControls"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="ShowScrollIndicator"><![CDATA[value:True]]></Property>
+            <Property Type="Visual" Name="ShowCurtainShadows"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:375]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:387]]></Property>
+            <Property Type="Visual" Name="ExpansionFactor"><![CDATA[value:0.9]]></Property>
+            <Property Type="Visual" Name="WingSpan"><![CDATA[value:1.1999999999999997]]></Property>
+            <Property Type="Visual" Name="BackgroundFlat"><![CDATA[value:True]]></Property>
+          </Properties>
+          <Asset Name="Birds" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a42e-7d56-2456-pd85-076f4feafx88]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Butterfly" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a42e-7d56-2456-pd85-076f4feaft45]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Dandelion" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a42e-7d56-2456-pd85-076f4feafd00]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Gates" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a42e-7d56-2456-pd85-076f4feafm26]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Island" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a42e-7d56-2456-pd85-076f4feafb67]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Wheel" Visual="DefaultImage" Style="" Container="Default" ContainerStyle="DefaultStyle" Domain="value:Image">
+            <Properties>
+              <Property Type="Domain" Name="Source"><![CDATA[player://resources/b7a7a42e-7d56-2456-pd85-076f4feafp58]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+      </Collection>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Finger Count Postures" DescriptorPath="player://data/InterfaceAssets/Leap%20Motion/IntuiLab.Leap.ifd" ExternalAssetName="PostureFingerCountFacade">
+      <Attachments>
+        <EventTrigger EventType="Domain" EventName="ZeroFingerPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Group_for_Zero_images/Image_for_Zero_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Group_for_Zero_images/Image_for_Zero_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Asset_Flow/" Type="Visual" Name="ScrollToAsset" Delay="value:0.0">
+            <ServiceValueParameter ParamName="strAssetName" Value="value:Birds" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="ZeroFingerPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Gauge_for_Zero/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Group_for_Zero_images/Image_for_Zero_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Group_for_Zero_images/Image_for_Zero_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="ZeroFingerPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Gauge_for_Zero/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Group_for_Zero_images/Image_for_Zero_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Zero/Group_for_Zero_images/Image_for_Zero_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="OneFingerPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Group_for_One_images/Image_for_One_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Group_for_One_images/Image_for_One_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Asset_Flow/" Type="Visual" Name="ScrollToAsset" Delay="value:0.0">
+            <ServiceValueParameter ParamName="strAssetName" Value="value:Butterfly" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="OneFingerPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Gauge_for_One/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Group_for_One_images/Image_for_One_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Group_for_One_images/Image_for_One_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="OneFingerPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Gauge_for_One/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Group_for_One_images/Image_for_One_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_One/Group_for_One_images/Image_for_One_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="TwoFingersPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Group_for_Two_images/Image_for_Two_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Group_for_Two_images/Image_for_Two_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Asset_Flow/" Type="Visual" Name="ScrollToAsset" Delay="value:0.0">
+            <ServiceValueParameter ParamName="strAssetName" Value="value:Dandelion" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="TwoFingersPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Gauge_for_Two/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Group_for_Two_images/Image_for_Two_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Group_for_Two_images/Image_for_Two_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="TwoFingersPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Gauge_for_Two/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Group_for_Two_images/Image_for_Two_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Two/Group_for_Two_images/Image_for_Two_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="ThreeFingersPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Group_for_Three_images/Image_for_Three_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Group_for_Three_images/Image_for_Three_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Asset_Flow/" Type="Visual" Name="ScrollToAsset" Delay="value:0.0">
+            <ServiceValueParameter ParamName="strAssetName" Value="value:Gates" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="ThreeFingersPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Gauge_for_Three/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Group_for_Three_images/Image_for_Three_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Group_for_Three_images/Image_for_Three_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="ThreeFingersPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Gauge_for_Three/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Group_for_Three_images/Image_for_Three_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Three/Group_for_Three_images/Image_for_Three_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="FourFingersPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Group_for_Four_images/Image_for_Four_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Group_for_Four_images/Image_for_Four_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Asset_Flow/" Type="Visual" Name="ScrollToAsset" Delay="value:0.0">
+            <ServiceValueParameter ParamName="strAssetName" Value="value:Island" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="FourFingersPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Gauge_for_Four/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Group_for_Four_images/Image_for_Four_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Group_for_Four_images/Image_for_Four_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="FourFingersPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Gauge_for_Four/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Group_for_Four_images/Image_for_Four_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Four/Group_for_Four_images/Image_for_Four_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="FiveFingersPostureSucceed">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Group_for_Five_images/Image_for_Five_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Group_for_Five_images/Image_for_Five_detected/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Asset_Flow/" Type="Visual" Name="ScrollToAsset" Delay="value:0.0">
+            <ServiceValueParameter ParamName="strAssetName" Value="value:Wheel" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="FiveFingersPostureDetectionInProgress">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Gauge_for_Five/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+            <ServiceArgumentParameter ParamName="dRatioValue" ArgumentName="Percentage" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Group_for_Five_images/Image_for_Five_idle/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Group_for_Five_images/Image_for_Five_in_progress/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+        <EventTrigger EventType="Domain" EventName="FiveFingersPostureDetectionLost">
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Gauge_for_Five/" Type="Domain" Name="SetRatioValue" Delay="value:0.0">
+            <ServiceValueParameter ParamName="dRatioValue" Value="value:0" />
+            <ServiceValueParameter ParamName="bWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Group_for_Five_images/Image_for_Five_in_progress/" Type="Container" Name="Hide" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bHideWithAnimation" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default_template_for_Finger_Count_Postures/Group_general/Group_for_Five/Group_for_Five_images/Image_for_Five_idle/" Type="Container" Name="Show" Delay="value:0.0">
+            <ServiceValueParameter ParamName="bShowWithAnimation" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+      </Attachments>
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.ifd" Length="16965" LastModificationDate="2015-06-11T08:37:28Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.dll" Length="109568" LastModificationDate="2015-06-11T08:37:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Leap.dll" Length="1226424" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/LeapCSharp.dll" Length="89272" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/LeapCSharp.NET4.0.dll" Length="77312" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/leap_ico_32.png" Length="487" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.CountFinger.ifa" Length="99228" LastModificationDate="2015-06-11T08:37:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.General.ifa" Length="17797" LastModificationDate="2015-06-11T08:37:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.Gestures.ifa" Length="44338" LastModificationDate="2015-06-11T08:37:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/IntuiLab.Leap.Shifumi.ifa" Length="71009" LastModificationDate="2015-06-11T08:37:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_detected.png" Length="7807" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_idle.png" Length="7636" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/00_progress.png" Length="7585" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_detected.png" Length="8445" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_idle.png" Length="8233" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/01_progress.png" Length="8543" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_detected.png" Length="9956" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_idle.png" Length="9684" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/02_progress.png" Length="10187" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_detected.png" Length="11353" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_idle.png" Length="11027" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/03_progress.png" Length="11613" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_detected.png" Length="12148" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_idle.png" Length="11734" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/04_progress.png" Length="12336" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_detected.png" Length="14505" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_idle.png" Length="13861" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/05_progress.png" Length="13688" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Birds.png" Length="813034" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Butterfly.png" Length="514702" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Dandelion.jpg" Length="109092" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Gates.png" Length="566428" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Island.png" Length="582148" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/LeapHandPresent.png" Length="14890" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/LeapNoHandPresent.png" Length="12977" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_detected.png" Length="11315" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_idle.png" Length="11139" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/PaperLeap_progress.png" Length="12330" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ProgressBar_detected.png" Length="1083" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ProgressBar_none.png" Length="1076" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_detected.png" Length="7830" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_idle.png" Length="7618" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/RockLeap_progress.png" Length="7684" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_detected.png" Length="9952" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_idle.png" Length="9692" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/ScissorsLeap_progress.png" Length="10190" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeLeftLeap-detected.png" Length="12313" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeLeftLeap-idle.png" Length="12106" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeRightLeap-detected.png" Length="12414" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/SwipeRightLeap-idle.png" Length="12006" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/TapLeap-detected.png" Length="11684" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/TapLeap-idle.png" Length="10739" LastModificationDate="2015-03-16T10:46:04Z" />
+        <Dependency URI="player://data/InterfaceAssets/Leap Motion/Resources/Wheel.png" Length="702802" LastModificationDate="2015-03-16T10:46:04Z" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="b7a7a62e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="7636" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/00_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a63e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="7585" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/00_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a64e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="7807" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/00_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a54e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="1076" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/ProgressBar_none.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a55e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="1083" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/ProgressBar_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a65e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="8233" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/01_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a66e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="8543" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/01_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a67e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="8445" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/01_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a68e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="9684" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/02_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a69e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="10187" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/02_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a70e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="9956" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/02_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a71e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="11027" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/03_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a72e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="11613" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/03_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a73e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="11353" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/03_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a74e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="11734" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/04_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a75e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="12336" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/04_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a76e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="12148" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/04_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a45e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="13861" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/05_idle.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a46e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="13688" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/05_progress.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a47e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="14505" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/05_detected.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a42e-7d56-2456-pd85-076f4feafx88" Type="uri" Length="813034" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/Birds.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a42e-7d56-2456-pd85-076f4feaft45" Type="uri" Length="514702" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/Butterfly.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a42e-7d56-2456-pd85-076f4feafd00" Type="uri" Length="109092" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/Dandelion.jpg" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a42e-7d56-2456-pd85-076f4feafm26" Type="uri" Length="566428" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/Gates.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a42e-7d56-2456-pd85-076f4feafb67" Type="uri" Length="582148" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/Island.png" />
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="b7a7a42e-7d56-2456-pd85-076f4feafp58" Type="uri" Length="702802" LastModificationDate="2015-03-16T10:46:04Z" DefaultValue="player://data/Images/Wheel.png" />
+  </MashupResource>
+</Mashup>
