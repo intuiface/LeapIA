@@ -22,7 +22,7 @@ The code for Leap Motion Interface Assets is C#.
 To compile this project, follow these steps:
 * Open **IntuiLab.Leap.sln** in Visual Studio 2013,
 * Build the solution in **Release** mode,
-* Navigate to the root of the project, you can see a folder called **"LeapIA"** which contains all Kinect Interface Assets.
+* Navigate to the root of the project, you can see a folder called **"LeapIA"** which contains all Leap Motion Interface Assets.
 
 # How to use Leap Motion Interface Assets?
 
