@@ -1,30 +1,9 @@
-            // ****************************************************************************
-            // <copyright file="Scheduler.cs" company="IntuiLab">
-            // INTUILAB CONFIDENTIAL
-			//_____________________
-			// [2002] - [2015] IntuiLab SA
-			// All Rights Reserved.
-			// NOTICE: All information contained herein is, and remains
-			// the property of IntuiLab SA. The intellectual and technical
-			// concepts contained herein are proprietary to IntuiLab SA
-			// and may be covered by U.S. and other country Patents, patents
-			// in process, and are protected by trade secret or copyright law.
-			// Dissemination of this information or reproduction of this
-			// material is strictly forbidden unless prior written permission
-			// is obtained from IntuiLab SA.
-            // </copyright>
-            // ****************************************************************************
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using IntuiLab.Leap.DataStructures;
 using IntuiLab.Leap.Recognition.Gestures;
 using IntuiLab.Leap.Recognition.Postures;
-using IntuiLab.Leap.DataStructures;
-using Leap;
+using System;
+using System.Collections.Generic;
 using System.Timers;
-using System.Diagnostics;
 
 namespace IntuiLab.Leap.Recognition
 {
@@ -56,8 +35,6 @@ namespace IntuiLab.Leap.Recognition
         private List<IFrame> m_FramesForPostureRecognizer;
 
         private bool m_VerboseMode;
-        //private bool m_EmptyPeriod;
-        //private long m_FirstFingerTimestamp;
 
         /****** For the gestures buffer ******/
         /// <summary>
@@ -364,8 +341,6 @@ namespace IntuiLab.Leap.Recognition
             this.m_FramesForGestureRecognizer = new List<IFrame>(ParametersGesture.Instance.NbMinFrames);
             this.m_FramesForPostureRecognizer = new List<IFrame>(ParametersPosture.Instance.NbMinFrames);
             this.m_VerboseMode = verboseMode;
-            //this.m_EmptyPeriod = false;
-            //this.m_FirstFingerTimestamp = 0;
 
             this.m_Buffer = new List<GestureDetectedEventArgs>();
             this.m_FlagGesture = new Dictionary<GestureType, bool>(4)
@@ -1027,32 +1002,6 @@ namespace IntuiLab.Leap.Recognition
         /// <param name="frame">The actual frame</param>
         public void AddFrameGesture(IFrame frame)
         {
-            #region Skip first frames (not used)
-            // Skip some frames if there were no fingers in older frames
-            //if (framesForGestureRecognizer.Count == PropertiesLeapPlugin.Instance.GestureRecognizer_nbMinFrames && !emptyPeriod)
-            //{
-            //    int nbOfEmptyFrames = 0;
-            //    foreach (IFrame f in framesForGestureRecognizer)
-
-            //    {
-            //        if (f.Fingers.Count == 0)
-            //        {
-            //            nbOfEmptyFrames++;
-            //        }
-            //    }
-            //    if (nbOfEmptyFrames == PropertiesLeapPlugin.Instance.GestureRecognizer_nbMinFrames)
-            //    {
-            //        emptyPeriod = true;
-            //    }
-            //}
-
-            //if (emptyPeriod && frame.Fingers.Count > 0)
-            //{
-            //    firstFingerTimestamp = frame.Timestamp;
-            //    emptyPeriod = false;
-            //}
-            #endregion
-
             // Addition of the frame to the list
             if (frame.IsValid)
             {
@@ -1063,9 +1012,7 @@ namespace IntuiLab.Leap.Recognition
                 m_FramesForGestureRecognizer.Add(frame);
             }
 
-
             // Prepare data for the gesture recognizer and process it
-
             if (m_FramesForGestureRecognizer.Count == ParametersGesture.Instance.NbMinFrames)
             {
                 // we identify the frontmost finger
@@ -1106,8 +1053,6 @@ namespace IntuiLab.Leap.Recognition
                 }
             }
         }
-
-
 
         /// <summary>
         /// This function prepare data and send it to the posture recognizer

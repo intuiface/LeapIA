@@ -1,31 +1,8 @@
-            // ****************************************************************************
-            // <copyright file="LeapListener.cs" company="IntuiLab">
-            // INTUILAB CONFIDENTIAL
-			//_____________________
-			// [2002] - [2015] IntuiLab SA
-			// All Rights Reserved.
-			// NOTICE: All information contained herein is, and remains
-			// the property of IntuiLab SA. The intellectual and technical
-			// concepts contained herein are proprietary to IntuiLab SA
-			// and may be covered by U.S. and other country Patents, patents
-			// in process, and are protected by trade secret or copyright law.
-			// Dissemination of this information or reproduction of this
-			// material is strictly forbidden unless prior written permission
-			// is obtained from IntuiLab SA.
-            // </copyright>
-            // ****************************************************************************
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Leap;
-using IntuiLab.Leap.Events;
 using IntuiLab.Leap.Recognition;
-using IntuiLab.Leap.DataStructures;
-using IntuiLab.Leap.Pointing;
 using IntuiLab.Leap.Recognition.Gestures;
 using IntuiLab.Leap.Recognition.Postures;
+using Leap;
+using System;
 using System.ComponentModel;
 
 namespace IntuiLab.Leap
@@ -90,13 +67,6 @@ namespace IntuiLab.Leap
 
             this.m_Scheduler = new Scheduler(verboseMode);
 
-            //if (pointingWithOnlyPriorityFinger && usingLeapAPIForPointing)
-            //    m_FingerPointing = new LeapPriorityFingerPointing();
-            //else if (pointingWithOnlyPriorityFinger && !usingLeapAPIForPointing)
-            //    m_FingerPointing = new IntuiLabPriorityFingerPointing();
-            //else if (!pointingWithOnlyPriorityFinger)
-            //    m_FingerPointing = new LeapAllFingersPointing();
-
 
             if (usingLeapAPIForGesture)
                 m_GestureAPI = new LeapGestureAPI(m_Controller, m_VerboseMode);
@@ -118,7 +88,6 @@ namespace IntuiLab.Leap
         }
 
         #endregion
-
 
         #region Dispose
 
@@ -143,8 +112,6 @@ namespace IntuiLab.Leap
                 this.DisablePostureRecognition(PostureType.Three);
                 this.DisablePostureRecognition(PostureType.Four);
                 this.DisablePostureRecognition(PostureType.Five);
-
-                //this.DisablePointing();
 
                 m_Controller.RemoveListener(this);
                 m_Controller.Dispose();
@@ -184,16 +151,12 @@ namespace IntuiLab.Leap
                 Frame lastFrame = controller.Frame(1);
                 HandList hands = frame.Hands;
                 FingerList fingers = frame.Fingers;
-
                 
                 // if the CSV recording is activated, we store hands data and fingers data from this frame in files
                 RecordData(frame, hands, fingers);
                 
                 // we test if the events HandPresent/HandLost have to be raised
                 HandDetection(hands, fingers);
-
-                // then, we test if there are fingers in the detection field
-                //FingerDetection(frame, lastFrame, controller);
 
                 // and to finish, we proceed to the gesture and posture detections
                 GestureAndPostureDetection(frame);
