@@ -35,6 +35,11 @@ To be able to add Leap Motion Interface Assets in IntuiFace Composer, follow the
 
 See more information on our support webpage: [Using Leap Motion in IntuiFace Composer](http://support.intuilab.com/kb/non-touch-interactive-devices/using-leap-motion).
 
+-----
+
+Copyright &copy; 2015 IntuiLab.
+
+Released under the **MIT License**.
 
 
 
